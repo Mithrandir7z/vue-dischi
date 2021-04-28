@@ -21,9 +21,9 @@
         <div class="main-wrapper">
             <div v-for="song in songs" class="single-disc center" >
                 <img :src="song.poster" alt="">
-                <h2>PROVA</h2>
-                <h5>prova</h5>
-                <h6>1992</h6>
+                <h2>{{song.title}}</h2>
+                <h5>{{song.author}}</h5>
+                <h6>{{song.year}}</h6>
             </div>
 
         </div>
