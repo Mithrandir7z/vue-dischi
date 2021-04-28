@@ -7,27 +7,29 @@
 // BONUS 2: Ordinare i dischi per anno di uscita.
 
 
-
-
 var app = new Vue ({
     el: '#root',
 
     data: {
-
+        songs: []
     },
 
-    methods: {
-
+    method: {
+        
     },
 
     mounted () {
 
         axios
-            .get('https://flynn.boolean.careers/exercises/api/array/music')
-            .then((response) => {
+        .get('https://flynn.boolean.careers/exercises/api/array/music')
+        .then((response) => {
 
-                console.log(response);
-            })
+            console.log("response", response);
+            const result = response.data;
+
+            this.songs = result.response;
+            console.log("this.songs", this.songs);
+        })
 
     }
 })

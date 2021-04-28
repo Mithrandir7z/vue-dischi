@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.center {
+    text-align: center;
+}
+
 img {
     width: 100%;
 }
@@ -38,8 +42,16 @@ main {
 .single-disc {
     margin: 12px;
     min-width: calc( 100% / 7 );
+    background-color: #2e3b46;
+    color: white;
+    padding: 5px;
+}
 
-    /*test*/
-    background-color: cadetblue;
-    height: 70px;
+.single-disc img {
+    width: 160px;
+    height: auto;
+}
+
+.single-disc h6 {
+    color: grey;
 }

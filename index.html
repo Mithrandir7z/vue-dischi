@@ -7,7 +7,7 @@
 
     <!--CDN AXIOS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
-    
+
     <link rel="stylesheet" href="css/style.css">
     <title>Vue Disc</title>
 </head>
@@ -19,8 +19,11 @@
 
     <main id="root">
         <div class="main-wrapper">
-            <div class="single-disc">
-                <img src="" alt="">
+            <div v-for="song in songs" class="single-disc center" >
+                <img :src="song.poster" alt="">
+                <h2>PROVA</h2>
+                <h5>prova</h5>
+                <h6>1992</h6>
             </div>
 
         </div>
